@@ -1,0 +1,28 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --bg-color: #146C94;
+    --text-color: #F6F1F1;
+    --primary-color: #AFD3E2;
+    --secondary-color: #19A7CE;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background: linear-gradient(to bottom, var(--bg-color), var(--secondary-color), var(--secondary-color), black);
+    background-repeat: no-repeat;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}

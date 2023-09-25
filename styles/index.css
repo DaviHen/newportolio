@@ -1,0 +1,115 @@
+:root{
+    --bg-color: #146C94;
+    --text-color: #F6F1F1;
+    --primary-color: #AFD3E2;
+    --secondary-color: #19A7CE;
+}
+
+.index-header{
+    height: 100vh;
+}
+
+/* Navigation Menu */
+
+.InnerHeader-section nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    background-color: var(--secondary-color);
+}
+
+.InnerHeader-section nav img{
+    height: 80px;
+    width: 80px;
+    margin: 0 20px;
+}
+
+.InnerHeader-section nav ul li{
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.InnerHeader-section nav ul li a{
+    text-decoration: none;
+    font-size: 22px;
+    color: var(--text-color);
+    transition: color .5s;
+}
+
+.InnerHeader-section nav ul li a:hover{
+    color: var(--bg-color);
+}
+
+/*  */
+
+.presentation-section{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.presentation-imgDiv{
+    height: 300px;
+    width: 300px;
+}
+
+.presentation-imgDiv img{
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 100%;
+    border: 2px solid var(--primary-color)
+}
+
+.presentation-infoDiv{
+    
+}
+
+.presentation-infoDiv h1{
+    font-size: 50px;
+}
+
+.presentation-infoDiv p{
+    font-size: 25px;
+}
+
+.infoDiv-name{
+
+}
+
+.infoDiv-name span:first-child{
+    color: blue;
+}
+
+.infoDiv-name span:last-child{
+    color: black;
+}
+
+.infoDiv-job{
+    font-size: 72px;
+    background: -webkit-linear-gradient(0deg, rgb(0, 81, 255)40%, rgb(29, 29, 29));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.habilities-wrapper{
+    height: 100vh;
+    width: 80%;
+}
+
+.habilities{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+}
+
+.habilities img{
+    max-width: 100%;
+    max-height: 100%;
+}
