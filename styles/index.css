@@ -1,8 +1,18 @@
 :root{
-    --bg-color: #146C94;
+    /* --bg-color: #146C94;
     --text-color: #F6F1F1;
     --primary-color: #AFD3E2;
-    --secondary-color: #19A7CE;
+    --secondary-color: #19A7CE; */
+    --bg-color: #fcfcfc;
+    --text-color: #1a1a1a;
+    --primary-color: #AFD3E2;
+    --secondary-color: #49adff;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 .index-header{
@@ -15,7 +25,7 @@
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: var(--secondary-color);
+    box-shadow: 2px 0px 5px black;
 }
 
 .InnerHeader-section nav img{
@@ -37,7 +47,7 @@
 }
 
 .InnerHeader-section nav ul li a:hover{
-    color: var(--bg-color);
+    color: var(--secondary-color);
 }
 
 /*  */
@@ -96,30 +106,153 @@
     -webkit-text-fill-color: transparent;
 }
 
+/* About me */
+
+.about-section{
+    width: 80%;
+    text-align: center;
+}
+
+.about-section h2{
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.about-info{
+    font-size: 20px;
+    line-height: 2;
+}
+
+.about-linksContainer{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.about-linksContainer a{
+    padding: 15px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: white;
+    transition: .5s;
+}
+
+#github-btn{
+    background-color: #4582d1;
+}
+
+#github-btn:hover{
+    background-color: #35629c;
+}
+
+#linkedin-btn{
+    background-color: #0077b5;
+}
+
+#linkedin-btn:hover{
+    background-color: #00507a;
+}
+
+
+/* Habilities Section */
+
+.habilities-section{
+    width: 80%;
+    margin-top: 5%;
+}
+
+.habilities-section h2{
+    font-size: 30px;
+}
+
 .habilities-wrapper{
-    height: 100vh;
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
 }
 
 .habilities{
     text-align: center;
     display: flex;
+    align-items: center;
     height: 30%;
-    max-width: 15%;
+    width: 20%;
     display: flex;
     flex-direction: column;
     padding: 1rem;
     margin: 10px;
+    flex-shrink: 1;
 }
 
 .habilities h4{
-    font-size: 20px;
+    font-size: 1.2rem;
 }
 
 .habilities img{
     max-width: 100%;
     max-height: 100%;
     padding: 10%;
+}
+
+/* Projects Section */
+
+.projects-section{
+    width: 80%;
+    color: white;
+}
+
+.projects-section h2{
+    font-size: 30px;
+    margin: 50px 0;
+}
+
+.projects-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.projects{
+    display: flex;
+    gap: 20px;
+}
+
+.innerProjects-img{
+    height: 100%;
+}
+
+.innerProjects-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.innerProjects-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.innerProjects-info h3{
+    font-size: 25px;
+}
+
+.innerProjects-info p{
+    font-size: 18px;
+    line-height: 1.8;
+    width: 70%;
+    flex-shrink: 1;
+}
+
+.innerProjects-info a{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+    transition: color .5s;
+    align-self: flex-start;
+}
+
+.innerProjects-info a:hover{
+    color: rgb(0, 89, 255);
 }
