@@ -19,6 +19,20 @@
     height: 100vh;
 }
 
+/* Fade in effect */
+
+.fade-in {
+    opacity: 0;
+    transform: translateX(-100%);
+    transition: opacity .8s ease-in-out, transform .8s ease-in-out;
+}
+
+.makeElementVisible {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 /* Navigation Menu */
 
 .InnerHeader-section nav{
@@ -87,16 +101,12 @@
     font-size: 25px;
 }
 
-.infoDiv-name{
-
-}
-
 .infoDiv-name span:first-child{
     color: blue;
 }
 
 .infoDiv-name span:last-child{
-    color: black;
+    color: rgb(46, 46, 46);
 }
 
 .infoDiv-job{
@@ -254,5 +264,81 @@
 }
 
 .innerProjects-info a:hover{
-    color: rgb(0, 89, 255);
+    color: var(--secondary-color);
+}
+
+/* Experiences Section */
+
+.experiences-section{
+    width: 80%;
+    color: white;
+    margin-top: 5%;
+}
+
+.experiences-section h2{
+    margin: 50px 0;
+    font-size: 30px;
+}
+
+.experiences{
+    /* display: flex; */
+}
+
+.experiences h3{
+    font-size: 20px;
+}
+
+.experiences img{
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* Footer */
+
+.index-footer{
+    background: linear-gradient(180deg, transparent, black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.InnerFooter-section{
+    color: white;
+    font-weight: normal;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.InnerFooter-section > h2{
+    font-size: 30px;
+    margin: 30px 0;
+    width: 100%;
+}
+
+.contacts{
+    width: 30%;
+}
+
+.contacts ul{
+    margin: 10px;
+    line-height: 2;
+    list-style-position: inside;
+}
+
+.contacts ul li{
+    list-style-type: none;
+    font-size: 20px;
+}
+
+
+.contacts ul li a{
+    color: white;
+    transition: color .5s;
+}
+
+.contacts ul li a:hover{
+    color: var(--secondary-color);
 }
