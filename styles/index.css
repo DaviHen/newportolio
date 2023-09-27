@@ -1,8 +1,4 @@
 :root{
-    /* --bg-color: #146C94;
-    --text-color: #F6F1F1;
-    --primary-color: #AFD3E2;
-    --secondary-color: #19A7CE; */
     --bg-color: #fcfcfc;
     --text-color: #1a1a1a;
     --primary-color: #AFD3E2;
@@ -39,7 +35,6 @@
     height: 80px;
     display: flex;
     align-items: center;
-    box-shadow: 2px 0px 5px black;
 }
 
 .InnerHeader-section nav img{
@@ -89,10 +84,6 @@
     border: 2px solid var(--primary-color)
 }
 
-.presentation-infoDiv{
-    
-}
-
 .presentation-infoDiv h1{
     font-size: 50px;
 }
@@ -114,6 +105,7 @@
     background: -webkit-linear-gradient(0deg, rgb(0, 81, 255)40%, rgb(29, 29, 29));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    background-clip: default;
 }
 
 /* About me */
@@ -278,10 +270,6 @@
 .experiences-section h2{
     margin: 50px 0;
     font-size: 30px;
-}
-
-.experiences{
-    /* display: flex; */
 }
 
 .experiences h3{
