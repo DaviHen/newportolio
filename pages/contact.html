@@ -3,12 +3,60 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- FONTE ROBOTO -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,400;0,700;1,100;1,400;1,700&display=swap" rel="stylesheet">
+
+        <!-- ICONES -->
+
+        <!-- FavIcon -->
+        <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
+
+        <!-- Local style -->
         <link rel="stylesheet" href="../styles/base.css">
         <link rel="stylesheet" href="../styles/contact.css">
         <title>Contato</title>
     </head>
     <body>
         
-        <script src="js/script.js"></script>
+        <header>
+            <section class="InnerHeader-section">
+                <nav>
+                    <img src="../images/Logo.png" alt="A logo do site. Um D e um H entrelaçados, com o D sobrepondo o H">
+                    <ul>
+                        <li><a href="../index.html">Início</a></li>
+                        <li><a href="javascript:void(0)">Contato</a></li>
+                    </ul>
+                </nav>
+            </section>
+        </header>
+        <main>
+            <section class="contact-section">
+                <h2>Formulário de envio de email</h2>
+                <div class="contact-form">
+                    <div id="success-message">Sua mensagem foi enviada!</div>
+                    <form id="contactForm">
+                        <h2>Me mande um e-mail</h2>
+                        <label class="labelForm" for="name">Seu Nome:</label>
+                        <input type="text" id="name" name="name" required><br>
+                
+                        <label class="labelForm" for="email">Seu Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                
+                        <label class="labelForm" for="message">Messagem:</label>
+                        <textarea id="message" name="message" rows="3"></textarea><br>
+                
+                        <button type="submit" id="sendBtn">Enviar Email</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+        <div id="spinner-overlay"></div>
+        <div id="loading" class="loading-spinner"></div>   
+
+        <script src="../js/contact.js"></script>
+        <script src="../js/script.js"></script>
     </body>
 </html>

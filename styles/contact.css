@@ -1,6 +1,113 @@
-:root{
-    --bg-color: #146C94;
-    --text-color: #F6F1F1;
+:root {
+    --bg-color: #fcfcfc;
+    --text-color: #1a1a1a;
     --primary-color: #AFD3E2;
-    --secondary-color: #19A7CE;
+    --secondary-color: #49adff;
 }
+
+body {
+    background: linear-gradient(180deg, var(--bg-color), var(--primary-color), var(--secondary-color));
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: calc(100vh - 80px);
+}
+
+
+.contact-section {
+    padding: 20px;
+    width: 80%;
+}
+
+.contact-section > h2{
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.contact-form {
+    background-color: transparent;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    width: 80%;
+    margin: 50px auto;
+}
+
+#success-message {
+    color: #4caf50;
+    font-size: 20px;
+    font-weight: bold;
+    display: none;
+}
+
+.labelForm {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+textarea{
+    resize: vertical;
+    max-width: 100%;
+}
+
+#sendBtn {
+    background-color: #0077b5;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#sendBtn:hover {
+    background-color: #006196;
+}
+
+#spinner-overlay{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.363);
+}
+
+.loading-spinner {
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-top: 5px solid var(--secondary-color);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1.5s linear infinite;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    z-index: 99;
+  }
+  
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+  
