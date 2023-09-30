@@ -202,7 +202,8 @@ body{
 }
 
 .innerProjects-img{
-    height: 100%;
+    max-width: 400px;
+    max-height: 400px;
 }
 
 .innerProjects-img img{
