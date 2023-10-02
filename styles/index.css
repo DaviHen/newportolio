@@ -368,6 +368,10 @@ body{
     .InnerFooter-section{
         width: 95%;
     }
+
+    .contacts{
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -376,8 +380,13 @@ body{
         flex-direction: column;
     }
 
+    .presentation-infoDiv{
+        text-align: center;
+    }
+
     .about-section{
         text-align: justify;
+        margin-bottom: 20%;
     }
 
     .about-info{
