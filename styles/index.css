@@ -70,19 +70,16 @@ body{
 
 .presentation-infoDiv p{
     font-size: 25px;
+    margin: 5px 0;
 }
 
-.infoDiv-name span:first-child{
+.presentation-infoDiv span{
     color: blue;
-}
-
-.infoDiv-name span:last-child{
-    color: rgb(46, 46, 46);
 }
 
 .infoDiv-job{
     font-size: 72px;
-    background: -webkit-linear-gradient(0deg, rgb(0, 81, 255)40%, rgb(29, 29, 29));
+    background: -webkit-linear-gradient(0deg, rgb(0, 81, 255), rgb(29, 29, 29));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: default;
@@ -320,4 +317,102 @@ body{
 
 .contacts ul li a:hover{
     color: var(--secondary-color);
+}
+
+@media screen and (max-width: 1200px){
+    .presentation-section{
+        width: 95%;
+    }
+
+    .presentation-infoDiv h1{
+        font-size: 2.5rem;
+    }
+
+    .about-section{
+        width: 95%;
+    }
+
+    .habilities-section{
+        width: 95%;
+    }
+
+    .projects-section{
+        width: 95%;
+    }
+
+    .projects{
+        flex-direction: column;
+        margin: 0;
+        gap: 0;
+    }
+
+    .innerProjects-info{
+        padding: 0 5px;
+        width: 100%;
+    }
+
+    .innerProjects-info h3{
+        margin-top: 10px;
+    }
+    
+    .innerProjects-info p{
+        width: 100%;
+        margin: 15px 0;
+        text-align: justify;
+    }
+
+    .experiences-section{
+        width: 95%;
+    }
+
+    .InnerFooter-section{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .presentation-section{
+        gap: 30px;
+        flex-direction: column;
+    }
+
+    .about-section{
+        text-align: justify;
+    }
+
+    .about-info{
+        padding: 0 10px;
+    }
+
+    /*  */
+
+    
+    .habilities-wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    
+    .habilities{
+        height: 30%;
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .habilities h4{
+        font-size: 1.2rem;
+    }
+    
+    .habilities img{
+        max-width: 100%;
+        max-height: 100%;
+        padding: 10%;
+    }
+
+    #habilities-bootstrap img{
+        padding: 20%;
+    }
+
 }
