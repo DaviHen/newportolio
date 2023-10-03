@@ -11,6 +11,8 @@
 
         <!-- ICONES -->
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
         <!-- FavIcon -->
         <link rel="shortcut icon" href="../images/Logo.png" type="image/x-icon">
 
@@ -33,29 +35,21 @@
             </section>
         </header>
         <main>
-            <section class="contact-section">
-                <h2>Me mande um e-mail</h2>
-                <div class="contact-form">
-                    <div id="success-message">Sua mensagem foi enviada!</div>
-                    <form id="contactForm">
-                        
-                        <label class="labelForm" for="name">Seu Nome:</label>
-                        <input type="text" id="name" name="name" required><br>
-                
-                        <label class="labelForm" for="email">Seu Email:</label>
-                        <input type="email" id="email" name="email" required><br>
-                
-                        <label class="labelForm" for="message">Messagem:</label>
-                        <textarea id="message" name="message" rows="3"></textarea><br>
-                
-                        <button type="submit" id="sendBtn">Enviar Email</button>
-                    </form>
-                </div>
-            </section>
+            <div class="contact-icons">
+                <a href="mailto:davihmattos01@hotmail.com" target="_blank">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+                <a href="https://www.instagram.com/davihmf/" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://discord.gg/kWsNDaxMjt" target="_blank">
+                    <i class="fa-brands fa-discord"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/davi-henrique-de-mattos-ferreira-a7303428a/" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
         </main>
-        <div id="spinner-overlay"></div>
-        <div id="loading" class="loading-spinner"></div>   
-
         <script src="../js/contact.js"></script>
         <script src="../js/script.js"></script>
     </body>
