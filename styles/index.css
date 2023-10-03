@@ -370,7 +370,8 @@ body{
     }
 
     .contacts{
-        width: 50%;
+        width: 100%;
+        word-wrap: break-word;
     }
 }
 
